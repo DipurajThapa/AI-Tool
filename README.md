@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI Business Agent Platform
 
 A comprehensive AI-driven business automation platform that integrates critical functionalities across Operations, Marketing, Sales, and Customer Support.
@@ -181,3 +182,6 @@ For support, please open an issue in the GitHub repository or contact the develo
 - Pinecone for vector database
 - FastAPI team for the excellent framework
 - All contributors and maintainers
+=======
+# AI-Tool
+>>>>>>> 072e951704d24b35dfb41327becbe1df5648320a
