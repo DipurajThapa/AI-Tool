@@ -1,0 +1,82 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "npm",
+            "script": "dev",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "label": "npm: dev",
+            "detail": "next dev",
+            "isBackground": true,
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "type": "npm",
+            "script": "build",
+            "group": "build",
+            "problemMatcher": [],
+            "label": "npm: build",
+            "detail": "next build"
+        },
+        {
+            "type": "npm",
+            "script": "start",
+            "group": "build",
+            "problemMatcher": [],
+            "label": "npm: start",
+            "detail": "next start"
+        },
+        {
+            "type": "npm",
+            "script": "lint",
+            "group": "test",
+            "problemMatcher": ["$eslint-stylish"],
+            "label": "npm: lint",
+            "detail": "next lint"
+        },
+        {
+            "type": "npm",
+            "script": "format",
+            "group": "test",
+            "problemMatcher": [],
+            "label": "npm: format",
+            "detail": "prettier --write \"src/**/*.{ts,tsx}\""
+        },
+        {
+            "type": "npm",
+            "script": "type-check",
+            "group": "test",
+            "problemMatcher": ["$tsc"],
+            "label": "npm: type-check",
+            "detail": "tsc --noEmit"
+        },
+        {
+            "type": "npm",
+            "script": "test",
+            "group": "test",
+            "problemMatcher": [],
+            "label": "npm: test",
+            "detail": "jest"
+        },
+        {
+            "type": "npm",
+            "script": "test:watch",
+            "group": "test",
+            "problemMatcher": [],
+            "label": "npm: test:watch",
+            "detail": "jest --watch",
+            "isBackground": true,
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        }
+    ]
+} 

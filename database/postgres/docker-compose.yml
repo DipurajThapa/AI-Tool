@@ -1,0 +1,13 @@
+# PostgreSQL Docker Compose
+# filepath: d:\AI Business Agent\ai-agentic-product\database\postgres\docker-compose.yml
+version: '3.8'
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: ai_agentic
+    ports:
+      - "5432:5432"
